@@ -1,0 +1,17 @@
+syntax = "proto3";
+package cities; 
+
+option go_package = "pb/cities;cities";
+
+import "city/city_message.proto";
+
+message CitiesStream {
+  City city = 1;
+}
+
+message EmptyMessage {}
+
+service CitiesService {
+  rpc GetCity(City) returns (City) {}
+  rpc GetCities(EmptyMessage) returns (stream CitiesStream) {}
+}

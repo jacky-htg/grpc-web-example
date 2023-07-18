@@ -1,0 +1,22 @@
+{
+  "name": "grpc-web-example",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "gen": "protoc --proto_path=proto proto/*/*.proto --js_out=import_style=commonjs:./pb --grpc-web_out=import_style=commonjs,mode=grpcwebtext:./pb"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jacky-htg/grpc-web-example.git"
+  },
+  "keywords": [
+    "grpc-web"
+  ],
+  "author": "rijal.asep.nugroho@gmail.com",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/jacky-htg/grpc-web-example/issues"
+  },
+  "homepage": "https://github.com/jacky-htg/grpc-web-example#readme"
+}
